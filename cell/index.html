@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hemocytometer</title>
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <script async="true" src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script async="true" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="cellCounter.js"></script>
+  </head>
+  <body>
+    <div id="app_body" class="container">
+      <!-- <div id="cytometer_img"> -->
+        <div id="cytometer_img" class="container">
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="a" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="b" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="c" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="d" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="e" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="f" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="g" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="h" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="square">
+              <div class="content">
+                  <div class="table">
+                      <div id="i" class="table-cell numbers">
+                        &zwnj;
+                      </div>
+                  </div>
+              </div>
+          </div>
+        <!-- </div> -->
+      </div>
+
+
+      <div id="tally">Tap on a square to start counting</div>
+      <div id="btn_container">
+        <a href="##" id="clear" class="btn btn-warning">Clear</a>
+        <a href="##" id="clearAll" class="btn btn-danger">Clear All</a>
+        <a href="##" id="formula" class="btn btn-info">Formula</a>
+        <a href="##" id="export" class="btn btn-success" style="display: none;">Export</a>
+      </div>
+      <div id="formulaView">cells/ml = counted &times; (DF/squares) &times; 10,000
+        <input id="dilution" type="number" class="form-control" placeholder="Set dilution factor (default is 2)" aria-describedby="basic-addon1">
+        <a id="reference" href="http://bit.ly/1Pm2mkd" target="_blank">reference</a>
+      </div>
+      <div id="exportView">
+        <input id="email" type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+        <input id="title" type="text" class="form-control" placeholder="Experiment title" aria-describedby="basic-addon1">
+        <button type="submit" href="##" id="sendResult" class="btn btn-primary"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Send</button>
+      </div>
+
+    </div>
+    <div class = "navbar navbar-default navbar-fixed-bottom">
+      <div class = "container">
+        <a id="hire" href="http://bit.ly/25QSRq9" target="_blank">&lt;/&gt; with &#9829; by Francis Guinto</a>
+      </div>
+    </div>
+    <!-- <script src="jqBootstrapValidation.js"></script> -->
+  </body>
+</html>
